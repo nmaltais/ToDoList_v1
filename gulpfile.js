@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync');
@@ -9,7 +11,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./css/*.scss', ['sass']);
+  gulp.watch('./css/*.scss', gulp.series('sass'));
 });
 
 gulp.task('browser-sync', function () {
@@ -30,6 +32,6 @@ gulp.task('browser-sync', function () {
 
 
 // Default task
-gulp.task('default', gulp.series('browser-sync', function() {
-    gulp.start('sass:watch');
-}));
+gulp.task('default',
+    gulp.parallel('browser-sync', 'sass:watch')
+    );
