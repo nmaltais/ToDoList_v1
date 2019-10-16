@@ -31,6 +31,71 @@
         </div>
     </nav>
 
+    <div id="container">
+        <div class="row d-flex justify-content-center">
+            <div id="todoContainer" class="col-12 col-sm-5 " >
+                <div id="header"><h2>To-Do <i id="createToDoBtn" class="fa fa-plus-square" aria-hidden="true"></i></h2></div>
+                <div id="body">
+                    <ul id="todoList">
+                        <li id="todo_0">
+                            <div class="item_desc">
+                                <input type='checkbox' class="todo_checkbox"/> Prepare lunches
+                                <div class="item_date">due 09/28/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                        <li id="todo_1">
+                            <div class="item_desc">
+                                <input type='checkbox' class="todo_checkbox"/> Submit Course 2 Assignment 1
+                                <div class="item_date">due 10/06/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                        <li id="todo_2">
+                            <div class="item_desc">
+                                <input type='checkbox' class="todo_checkbox"/> Read Chapters 15-20
+                                <div class="item_date">due 09/30/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <br/>
+       <div class="row d-flex justify-content-center">
+           <div id="completedContainer" class="col-12 col-sm-5 " >
+               <div id="header"><h2>Done</h2></div>
+               <div id="body">
+                   <ul id="doneList">
+                       <li id="done_0">
+                           <div class="item_desc">
+                               <input type='checkbox' class="done_checkbox" checked disabled/> Send birthday card to Bob
+                               <div class="item_date">done 08/27/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                           </div>
+                       </li>
+                       <li id="done_1">
+                           <div class="item_desc">
+                               <input type='checkbox' class="done_checkbox" checked disabled/> Finish my taxes
+                               <div class="item_date">done 09/03/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                           </div>
+                       </li>
+                       <li id="done_2">
+                           <div class="item_desc">
+                               <input type='checkbox' class="done_checkbox" checked disabled/> Read Chapters 9-14
+                               <div class="item_date">done 09/04/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                           </div>
+                       </li>
+                       <li id="done_3">
+                           <div class="item_desc">
+                               <input type='checkbox' class="done_checkbox" checked disabled/> Take out the trash
+                               <div class="item_date">done 09/04/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+      </div>
+
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

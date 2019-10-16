@@ -1,11 +1,57 @@
 .navbar-dark {
-  background-color: #232F34; }
+  background-color: #232F34;
+  height: 70px; }
 
 #notificationsBtn {
   color: #F9AA33; }
 
 nav h1 {
-  color: #efefef; }
+  color: #efefef;
+  line-height: 70px; }
 
 body {
-  background-color: #4A6572; }
+  background-color: #344955;
+  padding: 70px 0px 0px 0px; }
+
+#todoContainer, #completedContainer {
+  background-color: #4A6572;
+  color: #F9AA33;
+  min-height: 200px;
+  max-height: 400px;
+  padding: 0px;
+  margin-top: 60px;
+  font-size: 20px; }
+  #todoContainer #header, #completedContainer #header {
+    background-color: #232F34;
+    padding: 5px 0px 5px 10px; }
+  #todoContainer #body, #completedContainer #body {
+    padding: 5px 10px 10px 0px; }
+    #todoContainer #body ul, #completedContainer #body ul {
+      list-style: none; }
+      #todoContainer #body ul li, #completedContainer #body ul li {
+        line-height: 40px; }
+    #todoContainer #body .fa-trash, #completedContainer #body .fa-trash {
+      margin-left: 10px;
+      line-height: 20px;
+      color: grey;
+      cursor: pointer; }
+    #todoContainer #body .fa-trash:hover, #completedContainer #body .fa-trash:hover {
+      color: white; }
+    #todoContainer #body .item_date, #completedContainer #body .item_date {
+      font-size: 20px;
+      float: right; }
+    #todoContainer #body .item_desc, #completedContainer #body .item_desc {
+      margin-left: -10px; }
+
+#completedContainer {
+  color: MediumSeaGreen; }
+  #completedContainer .item_desc {
+    text-decoration: line-through; }
+
+#createToDoBtn {
+  margin-left: 10px;
+  color: #ddd;
+  cursor: pointer; }
+
+#createToDoBtn:hover {
+  color: white; }

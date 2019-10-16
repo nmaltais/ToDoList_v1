@@ -1,0 +1,83 @@
+$primary-dark: #232F34;
+$primary-mid: #344955;
+$primary-light: #4A6572;
+$secondary: #F9AA33;
+
+$navbarHeight: 70px;
+
+
+
+.navbar-dark {
+     background-color: $primary-dark;
+     height: $navbarHeight;
+}
+
+#notificationsBtn{
+    color: $secondary;
+}
+
+nav h1{
+    color: #efefef;
+    line-height: $navbarHeight;
+}
+
+body{
+    background-color: $primary-mid;
+    padding:$navbarHeight 0px 0px 0px;
+}
+
+#todoContainer, #completedContainer{
+    background-color: $primary-light;
+    color: $secondary;
+    min-height: 200px;
+    max-height: 400px;
+    padding: 0px;
+    margin-top: 60px;
+    font-size: 20px;
+
+    #header{
+        background-color: $primary-dark;
+        padding: 5px 0px 5px 10px;
+
+    }
+    #body {
+        padding: 5px 10px 10px 0px;
+        ul{
+            list-style:none;
+            li{
+                line-height: 40px;
+            }
+        }
+        .fa-trash{
+            margin-left: 10px;
+            line-height: 20px;
+            color: grey;
+            cursor:pointer;
+        }
+        .fa-trash:hover{
+            color: white;
+        }
+        .item_date{
+            font-size: 20px;
+            float: right;
+        }
+        .item_desc{
+            margin-left: -10px;
+        }
+    }
+
+}
+#completedContainer{
+    color: MediumSeaGreen;
+    .item_desc{
+        text-decoration: line-through;
+    }
+}
+#createToDoBtn{
+    margin-left: 10px;
+    color: #ddd;
+    cursor: pointer;
+}
+#createToDoBtn:hover{
+    color: white;
+}
