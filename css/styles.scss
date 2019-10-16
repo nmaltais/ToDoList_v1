@@ -73,11 +73,30 @@ body{
         text-decoration: line-through;
     }
 }
-#createToDoBtn{
+#createTaskBtn{
     margin-left: 10px;
     color: #ddd;
     cursor: pointer;
 }
-#createToDoBtn:hover{
+#createTaskBtn:hover{
     color: white;
+}
+
+.modal-header{
+    background-color: $primary-dark;
+    border-color: $secondary;
+    color: $secondary;
+}
+.modal-body{
+    background-color: $primary-mid;
+    color: $secondary;
+}
+#loginBtn, #createTaskBtn{
+    cursor: pointer;
+}
+#createTaskForm{
+    width: 50%;
+    button[type=submit]{
+        float: right !important;
+    }
 }

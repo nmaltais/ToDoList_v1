@@ -48,10 +48,27 @@ body {
   #completedContainer .item_desc {
     text-decoration: line-through; }
 
-#createToDoBtn {
+#createTaskBtn {
   margin-left: 10px;
   color: #ddd;
   cursor: pointer; }
 
-#createToDoBtn:hover {
+#createTaskBtn:hover {
   color: white; }
+
+.modal-header {
+  background-color: #232F34;
+  border-color: #F9AA33;
+  color: #F9AA33; }
+
+.modal-body {
+  background-color: #344955;
+  color: #F9AA33; }
+
+#loginBtn, #createTaskBtn {
+  cursor: pointer; }
+
+#createTaskForm {
+  width: 50%; }
+  #createTaskForm button[type=submit] {
+    float: right !important; }

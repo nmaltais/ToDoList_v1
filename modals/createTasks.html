@@ -1,0 +1,55 @@
+<div id="createTaskModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create Task</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-around">
+                    <form id="createTaskForm" >
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="Action">Action </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm mr-1" name="Action" placeholder="Enter Action">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="DueDate">Due Date </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="date" class="form-control form-control-sm mr-1" name="DueDate" placeholder="Enter due Date">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label for="EmailReminder">Email Reminder </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <select name="EmailReminder">
+                                    <option value="10mins">10 Minutes before</option>
+                                    <option value="30mins">30 Minutes before</option>
+                                    <option value="1hours">1 Hour before</option>
+                                    <option value="4hours">4 Hours before</option>
+                                    <option value="12hours">12 Hours before</option>
+                                    <option value="1days">1 Day before</option>
+                                    <option value="3days">3 Days before</option>
+                                    <option value="1weeks">1 Week before</option>
+                                    <option value="2weeks">2 Weeks before</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
