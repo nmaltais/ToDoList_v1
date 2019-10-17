@@ -46,6 +46,9 @@ body{
             list-style:none;
             li{
                 line-height: 40px;
+                // color: white;
+                // .overdue{color: red;}
+                // .soon{color: yellow;}
             }
         }
         .fa-trash{
@@ -68,7 +71,10 @@ body{
 
 }
 #completedContainer{
-    color: MediumSeaGreen;
+    color: MediumSeaGreen !important;
+    li{
+        color: MediumSeaGreen !important;
+    }
     .item_desc{
         text-decoration: line-through;
     }
@@ -91,7 +97,7 @@ body{
     background-color: $primary-mid;
     color: $secondary;
 }
-#loginBtn, #createTaskBtn{
+#loginBtn, #createTaskBtn, #notificationsBtn{
     cursor: pointer;
 }
 #createTaskForm{

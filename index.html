@@ -21,7 +21,13 @@
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><span class="fa fa-bell fa-lg" id="notificationsBtn"></span></li>
+                    <li class="nav-item active"><span class="fa fa-bell fa-lg" id="notificationsBtn"
+                        data-container="body" data-toggle="popover" data-placement="bottom" data-html="true"
+                        data-content='"Prepare lunches" is overdue! <br />
+                                      "Read Chapters 15-20" is due soon!'
+                        ></span>
+                        <span class="badge badge-danger">2</span>
+                    </li>
                 </ul>
                 <span class="navbar-text">
                     <a id="loginBtn">
@@ -42,6 +48,7 @@
                         <li id="todo_0">
                             <div class="item_desc">
                                 <input type='checkbox' class="todo_checkbox"/> Prepare lunches
+                                <a class="badge badge-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
                                 <div class="item_date">due 09/28/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
                             </div>
                         </li>
@@ -52,8 +59,9 @@
                             </div>
                         </li>
                         <li id="todo_2">
-                            <div class="item_desc">
+                            <div class="item_desc soon">
                                 <input type='checkbox' class="todo_checkbox"/> Read Chapters 15-20
+                                <a class="badge badge-warning-sign"><i class="fa fa-warning" aria-hidden="true"></i></a>
                                 <div class="item_date">due 09/30/2019 <i class="fa fa-trash" aria-hidden="true"></i></div>
                             </div>
                         </li>
